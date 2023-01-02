@@ -1,0 +1,79 @@
+.header {
+    height: 55px;
+  
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    padding: 40px 5%;
+   
+    background-image: linear-gradient(rgba(147, 72, 26, 0.5),rgba(147, 72, 26,0.5));
+}
+  
+nav {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.button-header {
+    width: 150px;
+    height: 30px;
+    
+    font-size: 13px;
+    font-family:'Libre Baskerville';
+    font-weight: 700;
+    color: #e6caad;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    background-color: rgb(141, 63, 10);
+
+    border-radius: 8px;
+    border-width: 2px;
+
+    transition-duration: 0.3s;
+
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+@media (max-width:400px) {
+    .button-header{
+      width: 120px;
+      height:30px;
+    }
+}
+
+.button-header:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24), 0 13px 46px 0 rgba(0,0,0,0.19);
+    transition: 0.3s;
+    background-color: rgba(141, 62, 10, 0.826);
+}
+
+.button-header:active {
+    transform: translateY(4px);
+    box-shadow: 0 5px #000;
+}
